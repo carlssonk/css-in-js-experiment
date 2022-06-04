@@ -1,10 +1,17 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-import { css } from "linaria";
+import { css } from "@linaria/core";
+
+// const css = () => "";
+// import { css } from "linaria";
+
+// console.log(object);
 
 const title = css`
-  color: orange;
+  color: blue;
+  width: 100px;
+  box-shadow: 0 0 10px black;
 `;
 
 function App() {

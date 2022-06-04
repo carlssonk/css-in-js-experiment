@@ -3,7 +3,7 @@ import "./App.css";
 import { css } from "linaria";
 
 const title = css`
-  color: orange;
+  color: blue;
 `;
 
 function App() {

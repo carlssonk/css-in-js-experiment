@@ -463,22 +463,42 @@ module.exports = function (webpackEnv) {
                   },
                 },
                 {
-                  loader: "linaria/loader",
-                  // options: {
-                  // cacheDirectory: "src/.linaria_cache",
-                  // sourceMap: true,
-                  // babelOptions: {
-                  //   presets: [
-                  //     [
-                  //       require.resolve("babel-preset-react-app"),
-                  //       {
-                  //         runtime: hasJsxRuntime ? "automatic" : "classic",
-                  //       },
-                  //     ],
-                  //   ],
-                  // },
-                  // },
+                  loader: "@linaria/webpack4-loader",
+                  // loader: "linaria/loader",
+                  options: {
+                    cacheDirectory: "src/.linaria_cache",
+                    sourceMap: true,
+                    // babelOptions: {
+                    //   presets: [
+                    //     [
+                    //       require.resolve("babel-preset-react-app"),
+                    //       {
+                    //         runtime: hasJsxRuntime ? "automatic" : "classic",
+                    //       },
+                    //       "@linaria",
+                    //     ],
+                    //   ],
+                    // },
+                  },
                 },
+                // {
+                //   loader: "linaria/loader",
+                //   // loader: "linaria/loader",
+                //   options: {
+                //     sourceMap: true,
+                //     // babelOptions: {
+                //     //   presets: [
+                //     //     [
+                //     //       require.resolve("babel-preset-react-app"),
+                //     //       {
+                //     //         runtime: hasJsxRuntime ? "automatic" : "classic",
+                //     //       },
+                //     //       "@linaria",
+                //     //     ],
+                //     //   ],
+                //     // },
+                //   },
+                // },
               ],
             },
             // Process any JS outside of the app with Babel.
